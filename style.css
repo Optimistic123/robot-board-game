@@ -1,0 +1,137 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #f0f0f0; 
+}
+
+.container {
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 20px; 
+
+  width: 300px;
+  text-align: center; 
+}
+
+
+#grid {
+  display: grid;
+  gap: 2px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  position: relative;
+}
+
+.robot1 {
+  background-color: red;
+  color: white;
+}
+
+.robot2 {
+  background-color: blue;
+  color: white;
+}
+
+.robot1-path {
+  background-color: rgba(255, 0, 0, 0.5); 
+}
+
+.robot2-path {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.both-robots {
+  background-color: purple; 
+  color: white;
+}
+
+
+/* Style for the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* The slider before the switch is checked */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* When the switch is checked, change background and position of the slider */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#auto-play-btn {
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.game-interaction {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+  margin: 20px 0;
+}
+
+
+
+
+
+

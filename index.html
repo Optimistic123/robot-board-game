@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Chocolate Pickup Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Robot Chocolate Pickup Game</h1>
+      <div id="robot-status">Active Robot: Robot #1</div>
+      <div class="game-intercation">
+        <label class="switch">
+          <input type="checkbox" id="reset-btn">
+          <span class="slider round"></span>
+        </label>
+        <button id="auto-play-btn">Auto Play</button>
+      </div>
+
+      <div id="grid"></div>
+      <div id="counters">
+          <span id="robot1-counter">Robot 1 Chocolates: 0</span>
+          <span id="robot2-counter">Robot 2 Chocolates: 0</span>
+          <span id="total-counter">Total Chocolates: 0</span>
+      </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
