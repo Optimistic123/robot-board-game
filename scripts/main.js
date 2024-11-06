@@ -29,3 +29,5 @@ function resetGame() {
     updateCounters(gameState);
     updateRobotStatusDisplay(gameState);
 }
+
+//added comment
